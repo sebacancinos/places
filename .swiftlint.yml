@@ -1,0 +1,14 @@
+disabled_rules: # rule identifiers to exclude from running
+ - identifier_name
+ - todo # I can't even... Not today
+ - function_parameter_count
+ - file_length
+ - type_body_length
+ - function_body_length
+ - cyclomatic_complexity # This one should be enabled, it's a big refactor.   
+ - compiler_protocol_init
+ - legacy_hashing
+excluded:
+ - Pods
+
+line_length: 150

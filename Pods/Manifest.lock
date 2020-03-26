@@ -1,0 +1,24 @@
+PODS:
+  - FloatRatingView (4.0)
+  - SwiftLint (0.35.0)
+  - Toast-Swift (5.0.0)
+
+DEPENDENCIES:
+  - FloatRatingView (~> 4)
+  - SwiftLint
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - FloatRatingView
+    - SwiftLint
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
+
+PODFILE CHECKSUM: eef7dbe96f3a0319b9ae81a712bfec5908fedeea
+
+COCOAPODS: 1.8.4

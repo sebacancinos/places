@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlacesCellViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlacesCell" id="J23-gp-jsD" customClass="PlacesCellView" customModule="Places" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nYZ-Rd-Gl4">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-5J-OyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="145.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPEN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vh6-e0-UcU">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z3o-Md-vj3">
+                                <rect key="frame" x="0.0" y="14" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="z3o-Md-vj3" secondAttribute="height" multiplier="2:1" id="sFX-Na-s7v"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq9-Q0-LTK">
+                                <rect key="frame" x="0.0" y="116" width="200" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQX-OR-nQQ">
+                                <rect key="frame" x="0.0" y="133.5" width="200" height="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bBL-zX-NeM">
+                        <rect key="frame" x="90" y="54" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppf-TU-9qt" customClass="FloatRatingView" customModule="FloatRatingView">
+                        <rect key="frame" x="135" y="99" width="60" height="15"/>
+                        <color key="tintColor" red="1" green="0.7492936745183536" blue="0.38011646855828218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="9SW-ax-gX7"/>
+                            <constraint firstAttribute="width" constant="60" id="y4v-4O-yZN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="star" catalog="system"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="star.fill" catalog="system"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bBL-zX-NeM" firstAttribute="centerY" secondItem="z3o-Md-vj3" secondAttribute="centerY" id="B0C-02-9UI"/>
+                    <constraint firstItem="ppf-TU-9qt" firstAttribute="bottom" secondItem="z3o-Md-vj3" secondAttribute="bottom" id="CDA-xZ-dFx"/>
+                    <constraint firstItem="bBL-zX-NeM" firstAttribute="centerX" secondItem="z3o-Md-vj3" secondAttribute="centerX" id="Cr4-l7-wcM"/>
+                    <constraint firstItem="LBC-5J-OyJ" firstAttribute="top" secondItem="nYZ-Rd-Gl4" secondAttribute="top" id="W76-X1-rrn"/>
+                    <constraint firstItem="ppf-TU-9qt" firstAttribute="trailing" secondItem="z3o-Md-vj3" secondAttribute="trailing" constant="-5" id="c9a-Oq-9Hs"/>
+                    <constraint firstAttribute="trailing" secondItem="LBC-5J-OyJ" secondAttribute="trailing" id="fEf-nA-hcc"/>
+                    <constraint firstItem="LBC-5J-OyJ" firstAttribute="leading" secondItem="nYZ-Rd-Gl4" secondAttribute="leading" id="uNm-PA-VgV"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="MQX-OR-nQQ" id="Eph-Ag-nM7"/>
+                <outlet property="imageLoadingIndicator" destination="bBL-zX-NeM" id="ii8-8g-zH8"/>
+                <outlet property="nameLabel" destination="jq9-Q0-LTK" id="U2L-NC-ty9"/>
+                <outlet property="openLabel" destination="Vh6-e0-UcU" id="Tqb-Ga-D1m"/>
+                <outlet property="placeImage" destination="z3o-Md-vj3" id="XTo-Xz-Byy"/>
+                <outlet property="ratingView" destination="ppf-TU-9qt" id="9SI-Mu-NMX"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="153.82308845577214"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="64" height="58"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
+    </resources>
+</document>
